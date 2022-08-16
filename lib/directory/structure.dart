@@ -18,7 +18,7 @@ Future<void> makeDirectoryStructForDay({
       day.month.toString().padLeft(2, '0') +
       day.day.toString().padLeft(2, '0');
 
-  final daysPassed = DateTime(2022, 8, 16).difference(day).inDays;
+  final daysPassed = DateTime(2022, 8, 16).difference(day).inDays * -1;
 
   // Create all directories for the day
   mkDirSync('$pathToHome/bin/$dayName');
