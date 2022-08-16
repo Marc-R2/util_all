@@ -113,8 +113,13 @@ Future<void> replaceTextInFile({
 }
 
 /// Write text to a file
-Future<void> writeTextToFile(String path, String text) async {
+Future<void> writeTextToFile(
+  String path,
+  String text, {
+  bool override = false,
+}) async {
   final file = File(path.replaceAll('//', '/'));
+  if (file.existsSync() && !override) return;
   if (!file.existsSync()) file.createSync(recursive: true);
   await file.writeAsString(text);
 }
