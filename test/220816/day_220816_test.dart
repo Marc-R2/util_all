@@ -396,7 +396,7 @@ void main() {
 
         int randomNumber(int max) => Random().nextInt(max * 2);
 
-        bool testThis({
+        bool testThis<T>({
           required int count,
           required int max,
           required int times,

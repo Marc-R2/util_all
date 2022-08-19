@@ -84,7 +84,10 @@ void main() {
 
   // Add a README.md to the day's directory
   final taskFile = '$pathToHome/bin/$dayName/README.md';
-  await writeTextToFile(taskFile, 'Task: \n\n');
+  await writeTextToFile(
+    taskFile,
+    '# Day $daysPassed - $dayName\n\n## Task:\n\n',
+  );
 }
 
 /// Create a directory if it doesn't exist
