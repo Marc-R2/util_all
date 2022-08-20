@@ -15,12 +15,12 @@ String doSomething() => '220819';
 /// First solution - in n^2
 // TODO(Marc-R2): Optimize this solution to meet the requirements
 int smallestIntNotInList(List<int> list) {
-  var low = list.first;
+  int? low;
   var max = 0;
 
   for (final i in list) {
     if (i > max) max = i;
-    if (i > 0) {
+    if (i > 1 && (low == null || i < low)) {
       var found = false;
       for (final j in list) {
         if (i - 1 == j) found = true;
@@ -29,7 +29,7 @@ int smallestIntNotInList(List<int> list) {
     }
   }
 
-  if (low == 1) return max + 1;
+  if (low == null) return max + 1;
 
   return low - 1;
 }
