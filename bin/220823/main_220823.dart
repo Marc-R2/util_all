@@ -30,6 +30,24 @@ class Node<T> {
     if (right != null) counter += right!.countUniVal();
     return counter;
   }
+
+  String printTree() {
+    final sb = StringBuffer();
+    printTreeRec(sb, 0);
+    return sb.toString();
+  }
+
+  void printTreeRec(StringBuffer sb, int depth) {
+    sb.write('${'--' * depth}>');
+    if (isUniVal) {
+      sb.write('[$value]');
+    } else {
+      sb.write(' $value ');
+    }
+    sb.write('\n');
+    if (left != null) left!.printTreeRec(sb, depth + 1);
+    if (right != null) right!.printTreeRec(sb, depth + 1);
+  }
 }
 
 const sampleTree = Node<int>(
