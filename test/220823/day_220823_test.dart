@@ -10,6 +10,7 @@ void main() {
     group('Day 7 - 220823 - UniValTree - Nodes - isUniVal', () {
       test('Day 220823 - Node - empty', () {
         const node = Node(value: 0);
+        print(node.printTree());
         expect(node.isUniVal, true);
       });
 
@@ -18,6 +19,7 @@ void main() {
           value: 0,
           left: Node(value: 0),
         );
+        print(node.printTree());
         expect(node.isUniVal, true);
       });
 
@@ -26,6 +28,7 @@ void main() {
           value: 0,
           left: Node(value: 1),
         );
+        print(node.printTree());
         expect(node.isUniVal, false);
       });
 
@@ -34,6 +37,7 @@ void main() {
           value: 0,
           right: Node(value: 0),
         );
+        print(node.printTree());
         expect(node.isUniVal, true);
       });
 
@@ -42,6 +46,7 @@ void main() {
           value: 0,
           right: Node(value: 1),
         );
+        print(node.printTree());
         expect(node.isUniVal, false);
       });
 
@@ -51,6 +56,7 @@ void main() {
           left: Node(value: 0),
           right: Node(value: 0),
         );
+        print(node.printTree());
         expect(node.isUniVal, true);
       });
 
@@ -60,6 +66,7 @@ void main() {
           left: Node(value: 0),
           right: Node(value: 1),
         );
+        print(node.printTree());
         expect(node.isUniVal, false);
       });
 
@@ -69,6 +76,7 @@ void main() {
           left: Node(value: 1),
           right: Node(value: 0),
         );
+        print(node.printTree());
         expect(node.isUniVal, false);
       });
 
@@ -78,6 +86,7 @@ void main() {
           left: Node(value: 1),
           right: Node(value: 1),
         );
+        print(node.printTree());
         expect(node.isUniVal, false);
       });
 
@@ -87,6 +96,7 @@ void main() {
           left: Node(value: 0),
           right: Node(value: 0),
         );
+        print(node.printTree());
         expect(node.isUniVal, false);
       });
 
@@ -96,6 +106,7 @@ void main() {
           left: Node(value: 0),
           right: Node(value: 1),
         );
+        print(node.printTree());
         expect(node.isUniVal, false);
       });
 
@@ -105,6 +116,7 @@ void main() {
           left: Node(value: 1),
           right: Node(value: 0),
         );
+        print(node.printTree());
         expect(node.isUniVal, false);
       });
 
@@ -114,12 +126,14 @@ void main() {
           left: Node(value: 1),
           right: Node(value: 1),
         );
+        print(node.printTree());
         expect(node.isUniVal, true);
       });
     });
     group('Day 7 - 220823 - UniValTree - Nodes - countUniVal()', () {
       test('Day 220823 - Node - empty - 1', () {
         const node = Node(value: 0);
+        print(node.printTree());
         expect(node.countUniVal(), 1);
       });
 
@@ -128,6 +142,7 @@ void main() {
           value: 0,
           left: Node(value: 0),
         );
+        print(node.printTree());
         expect(node.countUniVal(), 2);
       });
 
@@ -136,6 +151,7 @@ void main() {
           value: 0,
           left: Node(value: 1),
         );
+        print(node.printTree());
         expect(node.countUniVal(), 1);
       });
 
@@ -144,6 +160,7 @@ void main() {
           value: 0,
           right: Node(value: 0),
         );
+        print(node.printTree());
         expect(node.countUniVal(), 2);
       });
 
@@ -152,6 +169,7 @@ void main() {
           value: 0,
           right: Node(value: 1),
         );
+        print(node.printTree());
         expect(node.countUniVal(), 1);
       });
 
@@ -161,6 +179,7 @@ void main() {
           left: Node(value: 0),
           right: Node(value: 0),
         );
+        print(node.printTree());
         expect(node.countUniVal(), 3);
       });
 
@@ -170,6 +189,7 @@ void main() {
           left: Node(value: 0),
           right: Node(value: 1),
         );
+        print(node.printTree());
         expect(node.countUniVal(), 2);
       });
 
@@ -179,6 +199,7 @@ void main() {
           left: Node(value: 1),
           right: Node(value: 0),
         );
+        print(node.printTree());
         expect(node.countUniVal(), 2);
       });
 
@@ -188,6 +209,7 @@ void main() {
           left: Node(value: 1),
           right: Node(value: 1),
         );
+        print(node.printTree());
         expect(node.countUniVal(), 2);
       });
 
@@ -197,6 +219,7 @@ void main() {
           left: Node(value: 0),
           right: Node(value: 0),
         );
+        print(node.printTree());
         expect(node.countUniVal(), 2);
       });
 
@@ -206,6 +229,7 @@ void main() {
           left: Node(value: 0),
           right: Node(value: 1),
         );
+        print(node.printTree());
         expect(node.countUniVal(), 2);
       });
 
@@ -215,6 +239,7 @@ void main() {
           left: Node(value: 1),
           right: Node(value: 0),
         );
+        print(node.printTree());
         expect(node.countUniVal(), 2);
       });
 
@@ -224,6 +249,7 @@ void main() {
           left: Node(value: 1),
           right: Node(value: 1),
         );
+        print(node.printTree());
         expect(node.countUniVal(), 3);
       });
 
@@ -236,7 +262,651 @@ void main() {
           ),
           right: Node(value: 0),
         );
+        print(node.printTree());
         expect(node.countUniVal(), 4);
+      });
+
+      test('Day 220823 - Node - 0001 - 3', () {
+        const node = Node(
+          value: 0,
+          left: Node(
+            value: 0,
+            left: Node(value: 0),
+          ),
+          right: Node(value: 1),
+        );
+        print(node.printTree());
+        expect(node.countUniVal(), 3);
+      });
+
+      test('Day 220823 - Node - 0010 - 3', () {
+        const node = Node(
+          value: 0,
+          left: Node(
+            value: 0,
+            left: Node(value: 1),
+          ),
+          right: Node(value: 0),
+        );
+        print(node.printTree());
+        expect(node.countUniVal(), 3);
+      });
+
+      test('Day 220823 - Node - 0011 - 2', () {
+        const node = Node(
+          value: 0,
+          left: Node(
+            value: 0,
+            left: Node(value: 1),
+          ),
+          right: Node(value: 1),
+        );
+        print(node.printTree());
+        expect(node.countUniVal(), 2);
+      });
+
+      test('Day 220823 - Node - 0100 - 2', () {
+        const node = Node(
+          value: 0,
+          left: Node(
+            value: 1,
+            left: Node(value: 0),
+          ),
+          right: Node(value: 0),
+        );
+        print(node.printTree());
+        expect(node.countUniVal(), 2);
+      });
+
+      test('Day 220823 - Node - 0101 - 2', () {
+        const node = Node(
+          value: 0,
+          left: Node(
+            value: 1,
+            left: Node(value: 0),
+          ),
+          right: Node(value: 1),
+        );
+        print(node.printTree());
+        expect(node.countUniVal(), 2);
+      });
+
+      test('Day 220823 - Node - 0110 - 3', () {
+        const node = Node(
+          value: 0,
+          left: Node(
+            value: 1,
+            left: Node(value: 1),
+          ),
+          right: Node(value: 0),
+        );
+        print(node.printTree());
+        expect(node.countUniVal(), 3);
+      });
+
+      test('Day 220823 - Node - 0111 - 3', () {
+        const node = Node(
+          value: 0,
+          left: Node(
+            value: 1,
+            left: Node(value: 1),
+          ),
+          right: Node(value: 1),
+        );
+        print(node.printTree());
+        expect(node.countUniVal(), 3);
+      });
+
+      test('Day 220823 - Node - 1000 - 3', () {
+        const node = Node(
+          value: 1,
+          left: Node(
+            value: 0,
+            left: Node(value: 0),
+          ),
+          right: Node(value: 0),
+        );
+        print(node.printTree());
+        expect(node.countUniVal(), 3);
+      });
+
+      test('Day 220823 - Node - 1001 - 3', () {
+        const node = Node(
+          value: 1,
+          left: Node(
+            value: 0,
+            left: Node(value: 0),
+          ),
+          right: Node(value: 1),
+        );
+        print(node.printTree());
+        expect(node.countUniVal(), 3);
+      });
+
+      test('Day 220823 - Node - 1010 - 2', () {
+        const node = Node(
+          value: 1,
+          left: Node(
+            value: 0,
+            left: Node(value: 1),
+          ),
+          right: Node(value: 0),
+        );
+        print(node.printTree());
+        expect(node.countUniVal(), 2);
+      });
+
+      test('Day 220823 - Node - 1011 - 2', () {
+        const node = Node(
+          value: 1,
+          left: Node(
+            value: 0,
+            left: Node(value: 1),
+          ),
+          right: Node(value: 1),
+        );
+        print(node.printTree());
+        expect(node.countUniVal(), 2);
+      });
+
+      test('Day 220823 - Node - 1100 - 2', () {
+        const node = Node(
+          value: 1,
+          left: Node(
+            value: 1,
+            left: Node(value: 0),
+          ),
+          right: Node(value: 0),
+        );
+        print(node.printTree());
+        expect(node.countUniVal(), 2);
+      });
+
+      test('Day 220823 - Node - 1101 - 3', () {
+        const node = Node(
+          value: 1,
+          left: Node(
+            value: 1,
+            left: Node(value: 0),
+          ),
+          right: Node(value: 1),
+        );
+        print(node.printTree());
+        expect(node.countUniVal(), 3);
+      });
+
+      test('Day 220823 - Node - 1110 - 3', () {
+        const node = Node(
+          value: 1,
+          left: Node(
+            value: 1,
+            left: Node(value: 1),
+          ),
+          right: Node(value: 0),
+        );
+        print(node.printTree());
+        expect(node.countUniVal(), 3);
+      });
+
+      test('Day 220823 - Node - 1111 - 4', () {
+        const node = Node(
+          value: 1,
+          left: Node(
+            value: 1,
+            left: Node(value: 1),
+          ),
+          right: Node(value: 1),
+        );
+        print(node.printTree());
+        expect(node.countUniVal(), 4);
+      });
+
+      test('Day 220823 - Node - 00000 - 5', () {
+        const node = Node(
+          value: 0,
+          left: Node(
+            value: 0,
+            left: Node(value: 0),
+            right: Node(value: 0),
+          ),
+          right: Node(value: 0),
+        );
+        print(node.printTree());
+        expect(node.countUniVal(), 5);
+      });
+
+      test('Day 220823 - Node - 00001 - 4', () {
+        const node = Node(
+          value: 0,
+          left: Node(
+            value: 0,
+            left: Node(value: 0),
+            right: Node(value: 0),
+          ),
+          right: Node(value: 1),
+        );
+        print(node.printTree());
+        expect(node.countUniVal(), 4);
+      });
+
+      test('Day 220823 - Node - 00010 - 4', () {
+        const node = Node(
+          value: 0,
+          left: Node(
+            value: 0,
+            left: Node(value: 0),
+            right: Node(value: 1),
+          ),
+          right: Node(value: 0),
+        );
+        print(node.printTree());
+        expect(node.countUniVal(), 4);
+      });
+
+      test('Day 220823 - Node - 00011 - 3', () {
+        const node = Node(
+          value: 0,
+          left: Node(
+            value: 0,
+            left: Node(value: 0),
+            right: Node(value: 1),
+          ),
+          right: Node(value: 1),
+        );
+        print(node.printTree());
+        expect(node.countUniVal(), 3);
+      });
+
+      test('Day 220823 - Node - 00100 - 4', () {
+        const node = Node(
+          value: 0,
+          left: Node(
+            value: 0,
+            left: Node(value: 1),
+            right: Node(value: 0),
+          ),
+          right: Node(value: 0),
+        );
+        print(node.printTree());
+        expect(node.countUniVal(), 4);
+      });
+
+      test('Day 220823 - Node - 00101 - 3', () {
+        const node = Node(
+          value: 0,
+          left: Node(
+            value: 0,
+            left: Node(value: 1),
+            right: Node(value: 0),
+          ),
+          right: Node(value: 1),
+        );
+        print(node.printTree());
+        expect(node.countUniVal(), 3);
+      });
+
+      test('Day 220823 - Node - 00110 - 4', () {
+        const node = Node(
+          value: 0,
+          left: Node(
+            value: 0,
+            left: Node(value: 1),
+            right: Node(value: 1),
+          ),
+          right: Node(value: 0),
+        );
+        print(node.printTree());
+        expect(node.countUniVal(), 4);
+      });
+
+      test('Day 220823 - Node - 00111 - 3', () {
+        const node = Node(
+          value: 0,
+          left: Node(
+            value: 0,
+            left: Node(value: 1),
+            right: Node(value: 1),
+          ),
+          right: Node(value: 1),
+        );
+        print(node.printTree());
+        expect(node.countUniVal(), 3);
+      });
+
+      test('Day 220823 - Node - 01000 - 3', () {
+        const node = Node(
+          value: 0,
+          left: Node(
+            value: 1,
+            left: Node(value: 0),
+            right: Node(value: 0),
+          ),
+          right: Node(value: 0),
+        );
+        print(node.printTree());
+        expect(node.countUniVal(), 3);
+      });
+
+      test('Day 220823 - Node - 01001 - 3', () {
+        const node = Node(
+          value: 0,
+          left: Node(
+            value: 1,
+            left: Node(value: 0),
+            right: Node(value: 0),
+          ),
+          right: Node(value: 1),
+        );
+        print(node.printTree());
+        expect(node.countUniVal(), 3);
+      });
+
+      test('Day 220823 - Node - 01010 - 3', () {
+        const node = Node(
+          value: 0,
+          left: Node(
+            value: 1,
+            left: Node(value: 0),
+            right: Node(value: 1),
+          ),
+          right: Node(value: 0),
+        );
+        print(node.printTree());
+        expect(node.countUniVal(), 3);
+      });
+
+      test('Day 220823 - Node - 01011 - 3', () {
+        const node = Node(
+          value: 0,
+          left: Node(
+            value: 1,
+            left: Node(value: 0),
+            right: Node(value: 1),
+          ),
+          right: Node(value: 1),
+        );
+        print(node.printTree());
+        expect(node.countUniVal(), 3);
+      });
+
+      test('Day 220823 - Node - 01100 - 3', () {
+        const node = Node(
+          value: 0,
+          left: Node(
+            value: 1,
+            left: Node(value: 1),
+            right: Node(value: 0),
+          ),
+          right: Node(value: 0),
+        );
+        print(node.printTree());
+        expect(node.countUniVal(), 3);
+      });
+
+      test('Day 220823 - Node - 01101 - 3', () {
+        const node = Node(
+          value: 0,
+          left: Node(
+            value: 1,
+            left: Node(value: 1),
+            right: Node(value: 0),
+          ),
+          right: Node(value: 1),
+        );
+        print(node.printTree());
+        expect(node.countUniVal(), 3);
+      });
+
+      test('Day 220823 - Node - 01110 - 4', () {
+        const node = Node(
+          value: 0,
+          left: Node(
+            value: 1,
+            left: Node(value: 1),
+            right: Node(value: 1),
+          ),
+          right: Node(value: 0),
+        );
+        print(node.printTree());
+        expect(node.countUniVal(), 4);
+      });
+
+      test('Day 220823 - Node - 01111 - 4', () {
+        const node = Node(
+          value: 0,
+          left: Node(
+            value: 1,
+            left: Node(value: 1),
+            right: Node(value: 1),
+          ),
+          right: Node(value: 1),
+        );
+        print(node.printTree());
+        expect(node.countUniVal(), 4);
+      });
+
+      test('Day 220823 - Node - 10000 - 4', () {
+        const node = Node(
+          value: 1,
+          left: Node(
+            value: 0,
+            left: Node(value: 0),
+            right: Node(value: 0),
+          ),
+          right: Node(value: 0),
+        );
+        print(node.printTree());
+        expect(node.countUniVal(), 4);
+      });
+
+      test('Day 220823 - Node - 10001 - 4', () {
+        const node = Node(
+          value: 1,
+          left: Node(
+            value: 0,
+            left: Node(value: 0),
+            right: Node(value: 0),
+          ),
+          right: Node(value: 1),
+        );
+        print(node.printTree());
+        expect(node.countUniVal(), 4);
+      });
+
+      test('Day 220823 - Node - 10010 - 3', () {
+        const node = Node(
+          value: 1,
+          left: Node(
+            value: 0,
+            left: Node(value: 0),
+            right: Node(value: 1),
+          ),
+          right: Node(value: 0),
+        );
+        print(node.printTree());
+        expect(node.countUniVal(), 3);
+      });
+
+      test('Day 220823 - Node - 10011 - 3', () {
+        const node = Node(
+          value: 1,
+          left: Node(
+            value: 0,
+            left: Node(value: 0),
+            right: Node(value: 1),
+          ),
+          right: Node(value: 1),
+        );
+        print(node.printTree());
+        expect(node.countUniVal(), 3);
+      });
+
+      test('Day 220823 - Node - 10100 - 3', () {
+        const node = Node(
+          value: 1,
+          left: Node(
+            value: 0,
+            left: Node(value: 1),
+            right: Node(value: 0),
+          ),
+          right: Node(value: 0),
+        );
+        print(node.printTree());
+        expect(node.countUniVal(), 3);
+      });
+
+      test('Day 220823 - Node - 10101 - 3', () {
+        const node = Node(
+          value: 1,
+          left: Node(
+            value: 0,
+            left: Node(value: 1),
+            right: Node(value: 0),
+          ),
+          right: Node(value: 1),
+        );
+        print(node.printTree());
+        expect(node.countUniVal(), 3);
+      });
+
+      test('Day 220823 - Node - 10110 - 3', () {
+        const node = Node(
+          value: 1,
+          left: Node(
+            value: 0,
+            left: Node(value: 1),
+            right: Node(value: 1),
+          ),
+          right: Node(value: 0),
+        );
+        print(node.printTree());
+        expect(node.countUniVal(), 3);
+      });
+
+      test('Day 220823 - Node - 10111 - 3', () {
+        const node = Node(
+          value: 1,
+          left: Node(
+            value: 0,
+            left: Node(value: 1),
+            right: Node(value: 1),
+          ),
+          right: Node(value: 1),
+        );
+        print(node.printTree());
+        expect(node.countUniVal(), 3);
+      });
+
+      test('Day 220823 - Node - 11000 - 3', () {
+        const node = Node(
+          value: 1,
+          left: Node(
+            value: 1,
+            left: Node(value: 0),
+            right: Node(value: 0),
+          ),
+          right: Node(value: 0),
+        );
+        print(node.printTree());
+        expect(node.countUniVal(), 3);
+      });
+
+      test('Day 220823 - Node - 11001 - 4', () {
+        const node = Node(
+          value: 1,
+          left: Node(
+            value: 1,
+            left: Node(value: 0),
+            right: Node(value: 0),
+          ),
+          right: Node(value: 1),
+        );
+        print(node.printTree());
+        expect(node.countUniVal(), 4);
+      });
+
+      test('Day 220823 - Node - 11010 - 3', () {
+        const node = Node(
+          value: 1,
+          left: Node(
+            value: 1,
+            left: Node(value: 0),
+            right: Node(value: 1),
+          ),
+          right: Node(value: 0),
+        );
+        print(node.printTree());
+        expect(node.countUniVal(), 3);
+      });
+
+      test('Day 220823 - Node - 11011 - 4', () {
+        const node = Node(
+          value: 1,
+          left: Node(
+            value: 1,
+            left: Node(value: 0),
+            right: Node(value: 1),
+          ),
+          right: Node(value: 1),
+        );
+        print(node.printTree());
+        expect(node.countUniVal(), 4);
+      });
+
+      test('Day 220823 - Node - 11100 - 3', () {
+        const node = Node(
+          value: 1,
+          left: Node(
+            value: 1,
+            left: Node(value: 1),
+            right: Node(value: 0),
+          ),
+          right: Node(value: 0),
+        );
+        print(node.printTree());
+        expect(node.countUniVal(), 3);
+      });
+
+      test('Day 220823 - Node - 11101 - 4', () {
+        const node = Node(
+          value: 1,
+          left: Node(
+            value: 1,
+            left: Node(value: 1),
+            right: Node(value: 0),
+          ),
+          right: Node(value: 1),
+        );
+        print(node.printTree());
+        expect(node.countUniVal(), 4);
+      });
+
+      test('Day 220823 - Node - 11110 - 4', () {
+        const node = Node(
+          value: 1,
+          left: Node(
+            value: 1,
+            left: Node(value: 1),
+            right: Node(value: 1),
+          ),
+          right: Node(value: 0),
+        );
+        print(node.printTree());
+        expect(node.countUniVal(), 4);
+      });
+
+      test('Day 220823 - Node - 11111 - 5', () {
+        const node = Node(
+          value: 1,
+          left: Node(
+            value: 1,
+            left: Node(value: 1),
+            right: Node(value: 1),
+          ),
+          right: Node(value: 1),
+        );
+        print(node.printTree());
+        expect(node.countUniVal(), 5);
       });
     });
   });
