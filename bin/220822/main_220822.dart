@@ -5,7 +5,7 @@ void main() {
   print(fastCountDecodeVariants('111'));
 }
 
-String doSomething() => 'msg.length >= 2';
+String doSomething() => '220822';
 
 const Map<String, String> charMapping = {
   '1': 'a',
@@ -71,7 +71,9 @@ int fastCountDecodeVariants(String msg) {
     if (msg.length >= 2 && (msg[0] == '1' || msg[0] == '2')) {
       count += fastCountDecodeVariants(msg.substring(2));
     }
+    if ((msg.length == 1 && msg[0] != '0') || msg.length == 2) {
+      return count + 1;
+    }
   }
-  if (msg.length == 1 || msg.length == 2) return count + 1;
   return count;
 }
