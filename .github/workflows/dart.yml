@@ -55,4 +55,10 @@ jobs:
       - name: Run tests for Day 5 - 220821
         run: dart test test/220821/day_220821_test.dart
         
+      - name: Run tests for Day 6 - 220822
+        run: dart test test/220822/day_220822_test.dart
+        
+      - name: Run tests for Day 7 - 220823
+        run: dart test test/220823/day_220823_test.dart
+        
       # nextUnittest
