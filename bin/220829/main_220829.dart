@@ -3,27 +3,24 @@ import 'dart:math';
 void main() {
   print('Day 13 - 220829');
 
-  print(estimatePI(27000000));
+  print(estimatePI(1954000000));
 }
 
 String doSomething() => '220829';
 
 double estimatePI(int pointCount) {
-  final points = List.generate(pointCount, (index) {
+  /*final points = List.generate(pointCount, (index) {
     final x = Random().nextDouble();
     return Offset(x, sqrt(1 - pow(x, 2)));
   })
-    ..sort((a, b) => a.x.compareTo(b.x))..add(Offset(1, 0));
-
-  /*final points = List.generate(pointCount, (index) {
-    final x = index / pointCount;
-    return Offset(x, sqrt(1 - pow(x, 2)));
-  });*/
+    ..sort((a, b) => a.x.compareTo(b.x))..add(Offset(1, 0));*/
 
   var of = Offset(0, 1);
   var dist = 0.0;
 
-  for (final o in points) {
+  for (var index = 0; index < pointCount; index++) {
+    final x = index / pointCount;
+    final o = Offset(x, sqrt(1 - pow(x, 2)));
     dist += of.distanceTo(o);
     of = o;
   }
