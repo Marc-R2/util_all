@@ -10,10 +10,30 @@ import '220821/day_220821_test.dart' as test220821;
 import '220822/day_220822_test.dart' as test220822;
 import '220823/day_220823_test.dart' as test220823;
 import '220824/day_220824_test.dart' as test220824;
+import '220825/day_220825_test.dart' as test220825;
+import '220826/day_220826_test.dart' as test220826;
+import '220827/day_220827_test.dart' as test220827;
+import '220828/day_220828_test.dart' as test220828;
+import '220829/day_220829_test.dart' as test220829;
 // nextImport
 
 Future<void> main() async {
   // Make sure the current and next directories are created
+  await makeDirectoryStructForDay(
+    pathToHome: './',
+    day: DateTime.now().subtract(const Duration(days: 4)),
+  );
+
+  await makeDirectoryStructForDay(
+    pathToHome: './',
+    day: DateTime.now().subtract(const Duration(days: 3)),
+  );
+
+  await makeDirectoryStructForDay(
+    pathToHome: './',
+    day: DateTime.now().subtract(const Duration(days: 2)),
+  );
+
   await makeDirectoryStructForDay(
     pathToHome: './',
     day: DateTime.now().subtract(const Duration(days: 1)),
@@ -34,5 +54,10 @@ Future<void> main() async {
   test220822.main();
   test220823.main();
   test220824.main();
+  test220825.main();
+  test220826.main();
+  test220827.main();
+  test220828.main();
+  test220829.main();
   // nextMain
 }
