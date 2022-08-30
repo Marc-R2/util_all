@@ -67,4 +67,19 @@ jobs:
       - name: Run tests for Day 9 - 220825
         run: dart test test/220825/day_220825_test.dart
         
+      - name: Run tests for Day 10 - 220826
+        run: dart test test/220826/day_220826_test.dart
+        
+      - name: Run tests for Day 11 - 220827
+        run: dart test test/220827/day_220827_test.dart
+        
+      - name: Run tests for Day 12 - 220828
+        run: dart test test/220828/day_220828_test.dart
+        
+      - name: Run tests for Day 13 - 220829
+        run: dart test test/220829/day_220829_test.dart
+        
+      - name: Run tests for Day 14 - 220830
+        run: dart test test/220830/day_220830_test.dart
+        
       # nextUnittest
