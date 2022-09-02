@@ -15,6 +15,10 @@ import '220826/day_220826_test.dart' as test220826;
 import '220827/day_220827_test.dart' as test220827;
 import '220828/day_220828_test.dart' as test220828;
 import '220829/day_220829_test.dart' as test220829;
+import '220830/day_220830_test.dart' as test220830;
+import '220831/day_220831_test.dart' as test220831;
+import '220901/day_220901_test.dart' as test220901;
+import '220902/day_220902_test.dart' as test220902;
 // nextImport
 
 Future<void> main() async {
@@ -59,5 +63,9 @@ Future<void> main() async {
   test220827.main();
   test220828.main();
   test220829.main();
+  test220830.main();
+  test220831.main();
+  test220901.main();
+  test220902.main();
   // nextMain
 }
