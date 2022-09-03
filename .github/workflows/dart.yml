@@ -91,4 +91,7 @@ jobs:
       - name: Run tests for Day 17 - 220902
         run: dart test test/220902/day_220902_test.dart
         
+      - name: Run tests for Day 18 - 220903
+        run: dart test test/220903/day_220903_test.dart
+        
       # nextUnittest
