@@ -4,45 +4,46 @@ Future<void> main() async {
   final currentPath = Directory.current.path;
   await makeDirectoryStructForDay(
     pathToHome: currentPath,
-    day: DateTime.now().subtract(const Duration(days: 1)),
+    date: DateTime.now().subtract(const Duration(days: 1)),
   );
 }
 
 Future<void> makeDirectoryStructForDay({
   required String pathToHome,
-  required DateTime day,
+  required DateTime date,
 }) async {
   // Name for the day
   // Format: YYMMDD - 220816
-  final dayName = day.year.toString().substring(2) +
-      day.month.toString().padLeft(2, '0') +
-      day.day.toString().padLeft(2, '0');
+  final year = date.year.toString().substring(2);
+  final month = date.month.toString().padLeft(2, '0');
+  final day = date.day.toString().padLeft(2, '0');
+  final dayName = year + month + day;
 
-  final daysPassed = DateTime(2022, 8, 16).difference(day).inDays * -1;
+  final daysPassed = DateTime(2022, 8, 16).difference(date).inDays * -1;
 
   // Create all directories for the day
-  mkDirSync('$pathToHome/bin/$dayName');
-  mkDirSync('$pathToHome/test/$dayName');
+  mkDirSync('$pathToHome/bin/$year/$month/$day/$dayName');
+  mkDirSync('$pathToHome/test/$year/$month/$day/$dayName');
 
   // Create the main file for the day
-  final mainFile = '$pathToHome/bin/$dayName/main_$dayName.dart';
+  final mainFile = '$pathToHome/bin/$year/$month/$day/$dayName/main_$year/$month/$day/$dayName.dart';
   final mainFileContent = '''
 void main() {
-  print('Day $daysPassed - $dayName');
+  print('Day $daysPassed - $year/$month/$day/$dayName');
 }
 
-String doSomething() => '$dayName';
+String doSomething() => '$year/$month/$day/$dayName';
 ''';
 
-  final testFile = '$pathToHome/test/$dayName/day_${dayName}_test.dart';
+  final testFile = '$pathToHome/test/$year/$month/$day/$dayName/day_${dayName}_test.dart';
   final testFileContent = '''
 import 'package:test/test.dart';
-import '../../bin/$dayName/main_$dayName.dart';
+import '../../../../bin/$year/$month/$day/$dayName/main_$year/$month/$day/$dayName.dart';
 
 void main() {
-  group('Day $daysPassed - $dayName', () {
-    test('Day $dayName - doSomething', () {
-      expect(doSomething(), '$dayName');
+  group('Day $daysPassed - $year/$month/$day/$dayName', () {
+    test('Day $year/$month/$day/$dayName - doSomething', () {
+      expect(doSomething(), '$year/$month/$day/$dayName');
     });
   });
 }
@@ -58,9 +59,9 @@ void main() {
     path: utilAllTestFile,
     oldText: '// nextImport',
     itNotContains:
-        "import '$dayName/day_${dayName}_test.dart' as test$dayName;",
+        "import '$year/$month/$day/$dayName/day_${dayName}_test.dart' as test$dayName;",
     newText:
-        "import '$dayName/day_${dayName}_test.dart' as test$dayName;\n// nextImport",
+        "import '$year/$month/$day/$dayName/day_${dayName}_test.dart' as test$dayName;\n// nextImport",
   );
   await replaceTextInFile(
     path: utilAllTestFile,
@@ -74,16 +75,16 @@ void main() {
   await replaceTextInFile(
     path: githubWorkflowFile,
     oldText: '# nextUnittest',
-    itNotContains: 'dart test test/$dayName/day_${dayName}_test.dart',
+    itNotContains: 'dart test test/$year/$month/$day/$dayName/day_${dayName}_test.dart',
     newText: '''
-- name: Run tests for Day $daysPassed - $dayName
-        run: dart test test/$dayName/day_${dayName}_test.dart
+- name: Run tests for Day $daysPassed - $year/$month/$day/$dayName
+        run: dart test test/$year/$month/$day/$dayName/day_${dayName}_test.dart
         
       # nextUnittest''',
   );
 
   // Add a README.md to the day's directory
-  final taskFile = '$pathToHome/bin/$dayName/README.md';
+  final taskFile = '$pathToHome/bin/$year/$month/$day/$dayName/README.md';
   await writeTextToFile(
     taskFile,
     '# Day $daysPassed - $dayName\n\n## Task:\n\n',

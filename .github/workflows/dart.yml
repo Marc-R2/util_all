@@ -94,4 +94,73 @@ jobs:
       - name: Run tests for Day 18 - 220903
         run: dart test test/220903/day_220903_test.dart
         
+      - name: Run tests for Day 19 - 220904
+        run: dart test test/220904/day_220904_test.dart
+        
+      - name: Run tests for Day 20 - 220905
+        run: dart test test/220905/day_220905_test.dart
+        
+      - name: Run tests for Day 21 - 220906
+        run: dart test test/220906/day_220906_test.dart
+        
+      - name: Run tests for Day 22 - 220907
+        run: dart test test/220907/day_220907_test.dart
+        
+      - name: Run tests for Day 23 - 220908
+        run: dart test test/220908/day_220908_test.dart
+        
+      - name: Run tests for Day 24 - 220909
+        run: dart test test/220909/day_220909_test.dart
+        
+      - name: Run tests for Day 25 - 220910
+        run: dart test test/220910/day_220910_test.dart
+        
+      - name: Run tests for Day 26 - 220911
+        run: dart test test/220911/day_220911_test.dart
+        
+      - name: Run tests for Day 27 - 220912
+        run: dart test test/220912/day_220912_test.dart
+        
+      - name: Run tests for Day 28 - 220913
+        run: dart test test/220913/day_220913_test.dart
+        
+      - name: Run tests for Day 29 - 220914
+        run: dart test test/220914/day_220914_test.dart
+        
+      - name: Run tests for Day 30 - 220915
+        run: dart test test/220915/day_220915_test.dart
+        
+      - name: Run tests for Day 31 - 220916
+        run: dart test test/220916/day_220916_test.dart
+        
+      - name: Run tests for Day 32 - 220917
+        run: dart test test/220917/day_220917_test.dart
+        
+      - name: Run tests for Day 33 - 220918
+        run: dart test test/220918/day_220918_test.dart
+        
+      - name: Run tests for Day 34 - 220919
+        run: dart test test/220919/day_220919_test.dart
+        
+      - name: Run tests for Day 35 - 220920
+        run: dart test test/220920/day_220920_test.dart
+        
+      - name: Run tests for Day 36 - 220921
+        run: dart test test/220921/day_220921_test.dart
+        
+      - name: Run tests for Day 37 - 220922
+        run: dart test test/220922/day_220922_test.dart
+        
+      - name: Run tests for Day 38 - 220923
+        run: dart test test/220923/day_220923_test.dart
+        
+      - name: Run tests for Day 39 - 220924
+        run: dart test test/220924/day_220924_test.dart
+        
+      - name: Run tests for Day 40 - 220925
+        run: dart test test/220925/day_220925_test.dart
+        
+      - name: Run tests for Day 41 - 220926
+        run: dart test test/220926/day_220926_test.dart
+        
       # nextUnittest
