@@ -163,4 +163,256 @@ jobs:
       - name: Run tests for Day 41 - 220926
         run: dart test test/220926/day_220926_test.dart
         
+      - name: Run tests for Day 0 - 22/08/16/220816
+        run: dart test test/22/08/16/220816/day_220816_test.dart
+        
+      - name: Run tests for Day 1 - 22/08/17/220817
+        run: dart test test/22/08/17/220817/day_220817_test.dart
+        
+      - name: Run tests for Day 2 - 22/08/18/220818
+        run: dart test test/22/08/18/220818/day_220818_test.dart
+        
+      - name: Run tests for Day 3 - 22/08/19/220819
+        run: dart test test/22/08/19/220819/day_220819_test.dart
+        
+      - name: Run tests for Day 4 - 22/08/20/220820
+        run: dart test test/22/08/20/220820/day_220820_test.dart
+        
+      - name: Run tests for Day 5 - 22/08/21/220821
+        run: dart test test/22/08/21/220821/day_220821_test.dart
+        
+      - name: Run tests for Day 6 - 22/08/22/220822
+        run: dart test test/22/08/22/220822/day_220822_test.dart
+        
+      - name: Run tests for Day 7 - 22/08/23/220823
+        run: dart test test/22/08/23/220823/day_220823_test.dart
+        
+      - name: Run tests for Day 8 - 22/08/24/220824
+        run: dart test test/22/08/24/220824/day_220824_test.dart
+        
+      - name: Run tests for Day 9 - 22/08/25/220825
+        run: dart test test/22/08/25/220825/day_220825_test.dart
+        
+      - name: Run tests for Day 10 - 22/08/26/220826
+        run: dart test test/22/08/26/220826/day_220826_test.dart
+        
+      - name: Run tests for Day 11 - 22/08/27/220827
+        run: dart test test/22/08/27/220827/day_220827_test.dart
+        
+      - name: Run tests for Day 12 - 22/08/28/220828
+        run: dart test test/22/08/28/220828/day_220828_test.dart
+        
+      - name: Run tests for Day 13 - 22/08/29/220829
+        run: dart test test/22/08/29/220829/day_220829_test.dart
+        
+      - name: Run tests for Day 14 - 22/08/30/220830
+        run: dart test test/22/08/30/220830/day_220830_test.dart
+        
+      - name: Run tests for Day 15 - 22/08/31/220831
+        run: dart test test/22/08/31/220831/day_220831_test.dart
+        
+      - name: Run tests for Day 16 - 22/09/01/220901
+        run: dart test test/22/09/01/220901/day_220901_test.dart
+        
+      - name: Run tests for Day 17 - 22/09/02/220902
+        run: dart test test/22/09/02/220902/day_220902_test.dart
+        
+      - name: Run tests for Day 18 - 22/09/03/220903
+        run: dart test test/22/09/03/220903/day_220903_test.dart
+        
+      - name: Run tests for Day 19 - 22/09/04/220904
+        run: dart test test/22/09/04/220904/day_220904_test.dart
+        
+      - name: Run tests for Day 20 - 22/09/05/220905
+        run: dart test test/22/09/05/220905/day_220905_test.dart
+        
+      - name: Run tests for Day 21 - 22/09/06/220906
+        run: dart test test/22/09/06/220906/day_220906_test.dart
+        
+      - name: Run tests for Day 22 - 22/09/07/220907
+        run: dart test test/22/09/07/220907/day_220907_test.dart
+        
+      - name: Run tests for Day 23 - 22/09/08/220908
+        run: dart test test/22/09/08/220908/day_220908_test.dart
+        
+      - name: Run tests for Day 24 - 22/09/09/220909
+        run: dart test test/22/09/09/220909/day_220909_test.dart
+        
+      - name: Run tests for Day 25 - 22/09/10/220910
+        run: dart test test/22/09/10/220910/day_220910_test.dart
+        
+      - name: Run tests for Day 26 - 22/09/11/220911
+        run: dart test test/22/09/11/220911/day_220911_test.dart
+        
+      - name: Run tests for Day 27 - 22/09/12/220912
+        run: dart test test/22/09/12/220912/day_220912_test.dart
+        
+      - name: Run tests for Day 28 - 22/09/13/220913
+        run: dart test test/22/09/13/220913/day_220913_test.dart
+        
+      - name: Run tests for Day 29 - 22/09/14/220914
+        run: dart test test/22/09/14/220914/day_220914_test.dart
+        
+      - name: Run tests for Day 30 - 22/09/15/220915
+        run: dart test test/22/09/15/220915/day_220915_test.dart
+        
+      - name: Run tests for Day 31 - 22/09/16/220916
+        run: dart test test/22/09/16/220916/day_220916_test.dart
+        
+      - name: Run tests for Day 32 - 22/09/17/220917
+        run: dart test test/22/09/17/220917/day_220917_test.dart
+        
+      - name: Run tests for Day 33 - 22/09/18/220918
+        run: dart test test/22/09/18/220918/day_220918_test.dart
+        
+      - name: Run tests for Day 34 - 22/09/19/220919
+        run: dart test test/22/09/19/220919/day_220919_test.dart
+        
+      - name: Run tests for Day 35 - 22/09/20/220920
+        run: dart test test/22/09/20/220920/day_220920_test.dart
+        
+      - name: Run tests for Day 36 - 22/09/21/220921
+        run: dart test test/22/09/21/220921/day_220921_test.dart
+        
+      - name: Run tests for Day 37 - 22/09/22/220922
+        run: dart test test/22/09/22/220922/day_220922_test.dart
+        
+      - name: Run tests for Day 38 - 22/09/23/220923
+        run: dart test test/22/09/23/220923/day_220923_test.dart
+        
+      - name: Run tests for Day 39 - 22/09/24/220924
+        run: dart test test/22/09/24/220924/day_220924_test.dart
+        
+      - name: Run tests for Day 40 - 22/09/25/220925
+        run: dart test test/22/09/25/220925/day_220925_test.dart
+        
+      - name: Run tests for Day 41 - 22/09/26/220926
+        run: dart test test/22/09/26/220926/day_220926_test.dart
+        
+      - name: Run tests for Day 0 - 220816
+        run: dart test test/22/08/220816/day_220816_test.dart
+        
+      - name: Run tests for Day 1 - 220817
+        run: dart test test/22/08/220817/day_220817_test.dart
+        
+      - name: Run tests for Day 2 - 220818
+        run: dart test test/22/08/220818/day_220818_test.dart
+        
+      - name: Run tests for Day 3 - 220819
+        run: dart test test/22/08/220819/day_220819_test.dart
+        
+      - name: Run tests for Day 4 - 220820
+        run: dart test test/22/08/220820/day_220820_test.dart
+        
+      - name: Run tests for Day 5 - 220821
+        run: dart test test/22/08/220821/day_220821_test.dart
+        
+      - name: Run tests for Day 6 - 220822
+        run: dart test test/22/08/220822/day_220822_test.dart
+        
+      - name: Run tests for Day 7 - 220823
+        run: dart test test/22/08/220823/day_220823_test.dart
+        
+      - name: Run tests for Day 8 - 220824
+        run: dart test test/22/08/220824/day_220824_test.dart
+        
+      - name: Run tests for Day 9 - 220825
+        run: dart test test/22/08/220825/day_220825_test.dart
+        
+      - name: Run tests for Day 10 - 220826
+        run: dart test test/22/08/220826/day_220826_test.dart
+        
+      - name: Run tests for Day 11 - 220827
+        run: dart test test/22/08/220827/day_220827_test.dart
+        
+      - name: Run tests for Day 12 - 220828
+        run: dart test test/22/08/220828/day_220828_test.dart
+        
+      - name: Run tests for Day 13 - 220829
+        run: dart test test/22/08/220829/day_220829_test.dart
+        
+      - name: Run tests for Day 14 - 220830
+        run: dart test test/22/08/220830/day_220830_test.dart
+        
+      - name: Run tests for Day 15 - 220831
+        run: dart test test/22/08/220831/day_220831_test.dart
+        
+      - name: Run tests for Day 16 - 220901
+        run: dart test test/22/09/220901/day_220901_test.dart
+        
+      - name: Run tests for Day 17 - 220902
+        run: dart test test/22/09/220902/day_220902_test.dart
+        
+      - name: Run tests for Day 18 - 220903
+        run: dart test test/22/09/220903/day_220903_test.dart
+        
+      - name: Run tests for Day 19 - 220904
+        run: dart test test/22/09/220904/day_220904_test.dart
+        
+      - name: Run tests for Day 20 - 220905
+        run: dart test test/22/09/220905/day_220905_test.dart
+        
+      - name: Run tests for Day 21 - 220906
+        run: dart test test/22/09/220906/day_220906_test.dart
+        
+      - name: Run tests for Day 22 - 220907
+        run: dart test test/22/09/220907/day_220907_test.dart
+        
+      - name: Run tests for Day 23 - 220908
+        run: dart test test/22/09/220908/day_220908_test.dart
+        
+      - name: Run tests for Day 24 - 220909
+        run: dart test test/22/09/220909/day_220909_test.dart
+        
+      - name: Run tests for Day 25 - 220910
+        run: dart test test/22/09/220910/day_220910_test.dart
+        
+      - name: Run tests for Day 26 - 220911
+        run: dart test test/22/09/220911/day_220911_test.dart
+        
+      - name: Run tests for Day 27 - 220912
+        run: dart test test/22/09/220912/day_220912_test.dart
+        
+      - name: Run tests for Day 28 - 220913
+        run: dart test test/22/09/220913/day_220913_test.dart
+        
+      - name: Run tests for Day 29 - 220914
+        run: dart test test/22/09/220914/day_220914_test.dart
+        
+      - name: Run tests for Day 30 - 220915
+        run: dart test test/22/09/220915/day_220915_test.dart
+        
+      - name: Run tests for Day 31 - 220916
+        run: dart test test/22/09/220916/day_220916_test.dart
+        
+      - name: Run tests for Day 32 - 220917
+        run: dart test test/22/09/220917/day_220917_test.dart
+        
+      - name: Run tests for Day 33 - 220918
+        run: dart test test/22/09/220918/day_220918_test.dart
+        
+      - name: Run tests for Day 34 - 220919
+        run: dart test test/22/09/220919/day_220919_test.dart
+        
+      - name: Run tests for Day 35 - 220920
+        run: dart test test/22/09/220920/day_220920_test.dart
+        
+      - name: Run tests for Day 36 - 220921
+        run: dart test test/22/09/220921/day_220921_test.dart
+        
+      - name: Run tests for Day 37 - 220922
+        run: dart test test/22/09/220922/day_220922_test.dart
+        
+      - name: Run tests for Day 38 - 220923
+        run: dart test test/22/09/220923/day_220923_test.dart
+        
+      - name: Run tests for Day 39 - 220924
+        run: dart test test/22/09/220924/day_220924_test.dart
+        
+      - name: Run tests for Day 40 - 220925
+        run: dart test test/22/09/220925/day_220925_test.dart
+        
+      - name: Run tests for Day 41 - 220926
+        run: dart test test/22/09/220926/day_220926_test.dart
+        
       # nextUnittest
