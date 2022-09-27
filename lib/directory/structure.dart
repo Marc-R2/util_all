@@ -41,9 +41,9 @@ import 'package:test/test.dart';
 import '../../../../bin/$year/$month/$dayName/main_$dayName.dart';
 
 void main() {
-  group('Day $daysPassed - $year/$month/$dayName', () {
-    test('Day $year/$month/$dayName - doSomething', () {
-      expect(doSomething(), '$year/$month/$dayName');
+  group('Day $daysPassed - $dayName', () {
+    test('Day $dayName - doSomething', () {
+      expect(doSomething(), '$dayName');
     });
   });
 }
